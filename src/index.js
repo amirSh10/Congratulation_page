@@ -8,7 +8,6 @@ import reportWebVitals from './reportWebVitals';
 import  Congratulation from "./component/Congratulation.js"
 
 // css file and bootstrap
-import 'bootstrap/dist/css/bootstrap.css';
 import "./component/style/Congratulation.css"
 
 ReactDOM.render(
