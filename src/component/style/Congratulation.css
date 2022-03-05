@@ -1,0 +1,59 @@
+body {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #222f3e;
+  }
+  
+  .flex_of_congratulation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex_main_div_of_congratulation {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #576574;
+    border-radius: 20px;
+  }
+
+  .flex_of_imput_congratulation {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .style_of_text_congratulation {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  .aa{
+    display: none;
+  }
+  
+  .style_input_congratulation {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  .style_of_btn_congratulation{
+    margin-top: 10px;
+    width: 25%;
+    padding: 15px 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #10ac84;
+    color: #fff;
+  }
+
+
+ 
