@@ -10,6 +10,8 @@ function Cangratulation() {
     english: {
       text1: " You did it! So proud of you.",
       text2: "Congratulation",
+      text3:
+        "A year has passed and we have tried in this way and this is our one-year celebration. Thank you all for coming.",
       text_btn: " Congratulation",
       text_err: " Fill the input!",
       text_placeholder: "Enter Your Name",
@@ -18,6 +20,8 @@ function Cangratulation() {
       text1: ".توانجامش دادی! خیلی به تو افتخار میکنم",
       text2: "تبریک",
       text_btn: "تبریک",
+      text3:
+        "یک سال گذشت و ما در این راه تلاش کردیم و این جشن یکسالگی کارمون هست.ممنون از همگی که همراهی کردین",
       text_err: "نام را پر کنید!",
       text_placeholder: "نام خود را وارد کنید",
     },
@@ -29,7 +33,12 @@ function Cangratulation() {
 
   return (
     <>
-      <div className="flex_of_congratulation">
+      <div
+        style={{
+          fontFamily: language == "english" ? "Vazir" : "Alfa Slab One",
+        }}
+        className="flex_of_congratulation"
+      >
         <div className="flex_main_div_of_congratulation">
           <div className="flex_of_language">
             <div class="dropdown">
@@ -59,12 +68,15 @@ function Cangratulation() {
             {content.text1}
           </h1>
 
-          <h1
+          <h6
             className="style_of_text_congratulation aa"
             style={{ display: click == "show" ? "none" : "block" }}
           >
-            {content.text2} <span style={{ color: "#FBA100" }}>{Value}</span>
-          </h1>
+            {content.text2} <span style={{ color: "#FBA100" }}>{Value}</span>{" "}
+            <br></br>
+            {content.text3}
+          </h6>
+
           <div style={{ display: click == "show" ? "block" : "none" }}>
             <div className="flex_of_imput_congratulation">
               <input
