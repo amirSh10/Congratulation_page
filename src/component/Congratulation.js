@@ -10,6 +10,8 @@ function Cangratulation() {
     english: {
       text1: " You did it! So proud of you.",
       text2: "Congratulation",
+      text3:
+        "Today in Gregorian Calender 15/March/2021 a year has passed and we have tried in this way and this is our one-year celebration. Thank you all for accompanying us.",
       text_btn: " Congratulation",
       text_err: " Fill the input!",
       text_placeholder: "Enter Your Name",
@@ -18,11 +20,13 @@ function Cangratulation() {
       text1: ".توانجامش دادی! خیلی به تو افتخار میکنم",
       text2: "تبریک",
       text_btn: "تبریک",
+      text3:
+        "امروز در تاریخ شمسی 25/12/1399 یک سال گذشت و ما در این راه تلاش کردیم و این جشن یکسالگی کارمون هست.ممنون از همگی که همراهی کردین.",
       text_err: "نام را پر کنید!",
       text_placeholder: "نام خود را وارد کنید",
     },
   };
-// thjfgjhgjggfhfg
+
   language == "english"
     ? (content = content.english)
     : (content = content.persian);
@@ -63,7 +67,9 @@ function Cangratulation() {
             className="style_of_text_congratulation aa"
             style={{ display: click == "show" ? "none" : "block" }}
           >
-            {content.text2} <span style={{ color: "#FBA100" }}>{Value}</span>
+            {content.text2} <span style={{ color: "#FBA100" }}>{Value}</span>{" "}
+            <br></br>
+            {content.text3}
           </h1>
           <div style={{ display: click == "show" ? "block" : "none" }}>
             <div className="flex_of_imput_congratulation">
