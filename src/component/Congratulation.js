@@ -22,7 +22,7 @@ function Cangratulation() {
       text_placeholder: "نام خود را وارد کنید",
     },
   };
-
+// thjfgjhgjg
   language == "english"
     ? (content = content.english)
     : (content = content.persian);
